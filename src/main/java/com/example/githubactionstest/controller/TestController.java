@@ -15,6 +15,6 @@ public class TestController {
     @GetMapping("/status")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<?> getStatus() {
-        return ResponseEntity.ok("working again!");
+        return ResponseEntity.ok("working again,just checking");
     }
 }
