@@ -9,13 +9,12 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/v")
+@RequestMapping("/v2")
 public class TestController {
 
-
-    @GetMapping
+    @GetMapping("/status")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<?> getStatus() {
-        return ResponseEntity.ok("working");
+        return ResponseEntity.ok("working again!");
     }
 }
